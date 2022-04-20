@@ -5,6 +5,10 @@
   height: 50px;
 }
 
+.black {
+  background-color: black;
+}
+
 .dark-blue {
   background-color: darkblue;
 }
@@ -17,6 +21,3 @@
   background-color: cornflowerblue;
 }
 
-.light-blue {
-  background-color: lightblue;
-}
