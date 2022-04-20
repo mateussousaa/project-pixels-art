@@ -32,3 +32,7 @@
   height: 40px;
   display: inline-block;
 }
+
+#clear-board {
+  margin: 20px 0px;
+}
