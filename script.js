@@ -34,6 +34,14 @@ buttonGenerateBoard.addEventListener('click', function() {
     eraseOldBoard();
     createNewBoard(boardSize);
   }
+  else if (boardSize < 5) {
+    eraseOldBoard();
+    createNewBoard(5);
+  }
+  else if (boardSize > 50){
+    eraseOldBoard()
+    createNewBoard(50);
+  }
 });
 
 function createNewBoard(boardSize) {
