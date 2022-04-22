@@ -33,6 +33,15 @@
   display: inline-block;
 }
 
-#clear-board {
+.control-board {
   margin: 20px 0px;
+}
+
+.control-board input {
+  width: 250px;
+}
+
+#pixel-board {
+  width: 200px;
+  display: table;
 }

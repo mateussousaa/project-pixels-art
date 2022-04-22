@@ -1,4 +1,5 @@
 const buttonClearBoard = document.getElementById('clear-board');
+const buttonGenerateBoard = document.getElementById('generate-board');
 
 document.addEventListener('click', function(event) {
   if (event.target.classList.contains('color')) {
@@ -23,3 +24,41 @@ buttonClearBoard.addEventListener('click', function() {
     pixel.style.backgroundColor = 'white';
   }
 });
+
+buttonGenerateBoard.addEventListener('click', function() {
+  const boardSize = document.getElementById('board-size').value;
+  if (boardSize.length === 0 ) {
+    window.alert('Board inválido!');
+  }
+  else if (boardSize >= 5 && boardSize <= 50) {
+    eraseOldBoard();
+    createNewBoard(boardSize);
+  }
+});
+
+function createNewBoard(boardSize) {
+  const quantityOfPixels = boardSize * boardSize;
+  // widthBoard has the size of quantity of pixels * width of pixel - 40px;
+  let widthBoard = boardSize * 40;
+  widthBoard.toString();
+  widthBoard += 'px';
+  const pixelBoard = document.getElementById('pixel-board');
+  pixelBoard.style.width = widthBoard;
+  document.getElementById('main-container').appendChild(pixelBoard);
+  for (let i = 1; i <= quantityOfPixels; i += 1) {
+    const pixel = document.createElement('div');
+    pixel.className = 'pixel';
+    pixelBoard.appendChild(pixel);
+  }
+};
+
+function eraseOldBoard() {
+  const pixels = document.querySelectorAll('.pixel');
+  const lines = document.querySelectorAll('.line');
+  for (let index = 0; index < pixels.length; index += 1) {
+    pixels[index].parentElement.removeChild(pixels[index]);
+  }
+  for (let index = 0; index < lines.length; index += 1) {
+    lines[index].parentElement.removeChild(lines[index]);
+  }
+}
