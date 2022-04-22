@@ -1,6 +1,19 @@
 const buttonClearBoard = document.getElementById('clear-board');
 const buttonGenerateBoard = document.getElementById('generate-board');
 
+window.onload = function () {
+  const colorPalette = document.getElementById('color-palette').children;
+  for (let color of colorPalette) {
+    if (!color.classList.contains('black')) {
+      const red = Math.floor(Math.random() * 256);
+      const green = Math.floor(Math.random() * 256);
+      const blue = Math.floor(Math.random() * 256);
+      const newColor = "rgb(" + red + ", " + green + ", " + blue + ")";
+      color.style.backgroundColor = newColor;
+    }
+  }
+};
+
 document.addEventListener('click', function(event) {
   if (event.target.classList.contains('color')) {
     const previousSelectedColor = document.querySelector('.selected');
