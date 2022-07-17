@@ -8,62 +8,59 @@
   <title>Document</title>
 </head>
 <body>
-  <header>
-    <a href="#" >
-      <div id="logo">
-        <span>Pixels Art</span>
-        <img src="./iconPixelsArt.png" alt="Pixels Art Logo">
+    <header>
+      <a href="#" >
+        <div id="logo">
+          <span>Pixels Art</span>
+          <img src="./iconPixelsArt.png" alt="Pixels Art Logo">
+        </div>
+      </a>
+    </header>
+    <main id="main-container">
+      <div id="color-palette">
+        <div class="color black selected"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
       </div>
-    </a>
-    <nav>
+      <div class="control-board">
+        <input id="board-size" type="number" min="1" placeholder="set the size of board">
+        <div class="buttons-container">
+          <button id="generate-board">VQV</button>
+          <button id="clear-board" type="button ">Limpar</button>
+        </div>
+      </div>
+      <div id="pixel-board">
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+      </div>
+    </main>
+    <footer>
       <a href="https://www.linkedin.com/in/mateus-angelino-de-sousa">Linkedin</a>
-    </nav>
-  </header>
-  <main id="main-container">
-    <div id="color-palette">
-      <div class="color black selected"></div>
-      <div class="color"></div>
-      <div class="color"></div>
-      <div class="color"></div>
-    </div>
-    <div class="control-board">
-      <input id="board-size" type="number" min="1" placeholder="set the size of board">
-      <div class="buttons-container">
-        <button id="generate-board">VQV</button>
-        <button id="clear-board" type="button ">Limpar</button>
-      </div>
-    </div>
-    <div id="pixel-board">
-      <div class="pixel"></div>
-      <div class="pixel"></div>
-      <div class="pixel"></div>
-      <div class="pixel"></div>
-      <div class="pixel"></div>
-      <div class="pixel"></div>
-      <div class="pixel"></div>
-      <div class="pixel"></div>
-      <div class="pixel"></div>
-      <div class="pixel"></div>
-      <div class="pixel"></div>
-      <div class="pixel"></div>
-      <div class="pixel"></div>
-      <div class="pixel"></div>
-      <div class="pixel"></div>
-      <div class="pixel"></div>
-      <div class="pixel"></div>
-      <div class="pixel"></div>
-      <div class="pixel"></div>
-      <div class="pixel"></div>
-      <div class="pixel"></div>
-      <div class="pixel"></div>
-      <div class="pixel"></div>
-      <div class="pixel"></div>
-      <div class="pixel"></div>
-    </div>
-  </main>
-  <footer>
-    <p>© Mateussousa</p>
-  </footer>
+    </footer>
   <script src="script.js"></script>
 </body>
 </html>

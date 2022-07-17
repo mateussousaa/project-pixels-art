@@ -47,21 +47,13 @@ input, button {
   letter-spacing: .1em;
 }
 
-.color {
-  transition: .8s;
-}
-
-.color:hover {
-  box-shadow: var(--box-shadow01);
-}
-
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   background-color: #fff;
   box-shadow: var(--box-shadow03);
-  padding: 30px;
+  padding: 40px;
 }
 
 header #logo {
@@ -74,9 +66,7 @@ header #logo {
 header #logo img {
   width: 45px;
 }
-nav a {
-  padding: 10px 20px;
-}
+
 a {
   text-decoration: none;
   font-size: 2.5rem;
@@ -98,14 +88,21 @@ main {
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin: 0 auto;
-  height: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   gap: 20px;
-  padding: 90px 0 90px;
+  padding: 80px 0 80px;
   box-shadow: var(--box-shadow03);
+}
+
+main h1 {
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  font-size: 3rem;
+  font-weight: 700;
+  border-radius: var(--border-radius);
 }
 
 main #color-palette {
@@ -113,7 +110,7 @@ main #color-palette {
   display: flex;
   justify-content: center;
   min-width: 350px;
-  padding: 25px;
+  padding: 40px 0 40px;
   gap: 25px;
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow01);
@@ -125,6 +122,11 @@ main .color {
   height: 50px;
   border-radius: 50%;
   box-shadow: var(--box-shadow02);
+  transition: .8s;
+}
+
+main .color:hover {
+  box-shadow: var(--box-shadow01);
 }
 
 main .control-board {
@@ -152,6 +154,17 @@ main .buttons-container {
   box-shadow: var(--box-shadow04);
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  padding: 38px;
+}
+
+footer a {
+  padding: 10px 20px;
+}
+
 #pixel-board {
   padding-top: 30px;
   width: 200px;
@@ -159,29 +172,9 @@ main .buttons-container {
   flex-wrap: wrap;
 }
 
-footer {
-  padding: 50px;
-  display: flex;
-  justify-content: center;
-}
-
-footer p {
-  padding: 15px;
-  font-size: 2rem;
-}
-
-@media (max-width: 767.98px) {
-  header {
-    flex-direction: column;
-    gap: 42px
-  }
-
+@media only screen and (max-width: 600px) {
   main .control-board {
     flex-direction: column;
     align-items: center;
-  }
-
-  footer {
-    display: none;
   }
 }
