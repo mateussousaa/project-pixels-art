@@ -19,6 +19,7 @@ document.addEventListener('click', function(event) {
     const previousSelectedColor = document.querySelector('.selected');
     previousSelectedColor.classList.remove('selected');
     event.target.classList.add('selected');
+    event.target.style.outlineColor = event.target.style.backgroundColor;
   }
 });
 
