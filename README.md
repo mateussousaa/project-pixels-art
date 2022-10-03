@@ -1,16 +1,21 @@
-# 🚧 README em construção 🚧
+# Pixels Art
 
-<!-- Olá, Tryber!
+### PT - BR
 
-Esse é apenas um arquivo inicial para o README do seu projeto.
+Nesse projeto, eu fui capaz de:
 
-É essencial que você preencha esse documento por conta própria, ok?
+- Usar HTML para criar a Estrutura da página
+- Usar CSS para estilizar
+- Manipular o DOM
+- Manipular o Javascript
 
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
+### EN
 
-⚠️ IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
+In this project, I was able to:
 
--->
+- Use HTML to create the Page Structure
+- Use CSS to style
+- Manipulate the DOM
+- Manipulate Javascript
+
+#### Project Link: https://project-pixels-art-flax.vercel.app/
