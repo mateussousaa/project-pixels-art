@@ -1,6 +1,6 @@
 # Pixels Art
 
-![Screenshot da tela inicial](pixels_art.gif)
+![Screenshot da tela inicial](pixels.gif)
 
 ### PT - BR
 
