@@ -1,5 +1,7 @@
 # Pixels Art
 
+![Screenshot da tela inicial](pixels_art.gif)
+
 ### PT - BR
 
 Nesse projeto, eu fui capaz de:
