@@ -22,8 +22,7 @@ In this project, I was able to:
 
 #### Project Link: https://project-pixels-art-flax.vercel.app/
 
-<hr/>
-<br/>
+---
 
 ## Requisitos Obrigatórios:
 
